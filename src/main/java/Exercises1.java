@@ -5,7 +5,7 @@ public class Exercises1 {
     public long factorial(int n) {
         int factorial_number=1;
         for(int i=1;i<=n;i++)
-            factorial_number*=i;g
+            factorial_number*=i;
         return factorial_number;
     }
 
@@ -33,8 +33,14 @@ public class Exercises1 {
 
      */
     public char[][] generateTriangle(int rows) {
-        // TODO
-        return null;
+        char[][] triangle=new char[rows][];
+        for(int i=1;i<=rows;i++){
+            triangle[i-1]=new char[i];
+            for(int j=0;j<i;j++){
+                triangle[i-1][j]='*';
+            }
+        }
+        return triangle;
     }
 
 
